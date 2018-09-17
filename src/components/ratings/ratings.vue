@@ -105,6 +105,7 @@ export default{
     },
     created() {
         var _this = this;
+        //this.$axios.get('https://www.easy-mock.com/mock/5b9e72822b292b0e9154c66a/elm/ratings')
         this.$axios.get('/api/ratings')
         .then(function(response){
             if( response.data.errno === ERR_OK){
